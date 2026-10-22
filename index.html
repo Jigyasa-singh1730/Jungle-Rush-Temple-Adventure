@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jungle Rush - Temple Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="game">
+    <header class="top-bar">
+      <div class="brand">🌴 JUNGLE RUSH</div>
+      <div class="stats">
+        <span>🪙 <b id="coins">0</b></span>
+        <span>🏆 <b id="score">0</b></span>
+      </div>
+    </header>
+
+    <section class="game-area">
+      <canvas id="gameCanvas"></canvas>
+
+      <div class="overlay" id="overlay">
+        <div class="welcome-card">
+          <div class="hero-icon">🏃‍♂️</div>
+          <p class="eyebrow">THE JUNGLE IS CALLING!</p>
+          <h1 id="messageTitle">Jungle Rush</h1>
+          <p id="messageText">
+            Run, dodge and collect golden coins!
+          </p>
+          <button id="startBtn">▶ START ADVENTURE</button>
+          <p class="hint">← → Move &nbsp; ↑ Jump &nbsp; ↓ Slide</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <button class="control-btn" id="leftBtn" aria-label="Move left">⬅️</button>
+      <button class="control-btn jump-btn" id="jumpBtn" aria-label="Jump">⬆️</button>
+      <button class="control-btn" id="slideBtn" aria-label="Slide">⬇️</button>
+      <button class="control-btn" id="rightBtn" aria-label="Move right">➡️</button>
+    </footer>
+
+    <p class="footer-text">
+      ✨ Dodge the blocks • Collect coins • Beat your high score!
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
